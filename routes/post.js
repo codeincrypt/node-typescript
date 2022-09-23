@@ -1,12 +1,12 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const router = (0, express_1.Router)();
-const posts = [];
-router.get('/', (req, res, next) => {
+exports.__esModule = true;
+var express_1 = require("express");
+var router = (0, express_1.Router)();
+var posts = [];
+router.get('/', function (req, res, next) {
     res.status(200).json({ message: "please enter valid api endpoint" });
 });
-router.get('/post', (req, res, next) => {
+router.get('/post', function (req, res, next) {
     res.status(200).json({ post: posts });
 });
-exports.default = router;
+exports["default"] = router;

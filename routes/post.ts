@@ -7,7 +7,7 @@ const router = Router();
 const posts: Post[] = [];
 
 router.get('/', (req, res, next) => {
-  res.status(200).json({message :"please enter valin api endpoint"});
+  res.status(200).json({message :"please enter valid api endpoint"});
 });
 
 router.get('/post', (req, res, next) => {

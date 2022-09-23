@@ -1,5 +1,4 @@
-import express from 'express';
-
+import express = require("express");
 import PostRouter from './routes/post';
 
 const app = express();
